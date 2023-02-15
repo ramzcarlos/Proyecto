@@ -1,0 +1,7 @@
+<h1> Seismology</h1>
+
+<button [routerLink]="['sismos']" *ngIf="isLogged">catalogo</button>
+<button [routerLink]="['descripcion']" *ngIf="isLogged">about</button>
+
+<!-- realiza el routeo entre los componentes-->
+<router-outlet></router-outlet>
